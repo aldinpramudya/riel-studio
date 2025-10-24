@@ -2,6 +2,10 @@
 
 body {
     background-color: #efeff9;
+    color: #343434;
+    --main-color : #FF4F04;
+    --main-color-hover : #ef520f;
+    --gradient-main-color : linear-gradient(to-right, #FF4F04, #FFA743, #F68554);
 }
 
 

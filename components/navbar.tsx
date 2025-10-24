@@ -10,6 +10,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+
     return (
         // Container
         <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg">
@@ -39,7 +40,9 @@ export default function Navbar() {
                     <BsTranslate size={43}/>
                 </div>
                 {/* Icons End */}
-
+                {/* Mobile Button OTW  */}
+                
+                {/* Mobile Button End */}
             </div>
         </div>
         // COntainer End
