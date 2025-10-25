@@ -18,8 +18,8 @@ export default function Button({
     const baseStyle = "inline-flex items-center justify-center gap-2 font-semibold rounded-xl py-3 px-6";
 
     const variantStyles = {
-        primary: "bg-(--main-color) text-white hover:bg-(--main-color-hover) transition-all duration-500",
-        secondary: "text-(--main-color) border border-(--main-color) hover:bg-(--main-color) hover:text-white transition-all duration-500",
+        primary: "bg-(--main-color) text-white text-lg hover:bg-(--main-color-hover) transition-all duration-500",
+        secondary: "text-(--main-color) text-lg border border-(--main-color) hover:bg-(--main-color) hover:text-white transition-all duration-500",
     }
 
     const colorIcon = {
