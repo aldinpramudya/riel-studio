@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         // Container
-        <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg">
+        <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center">
                     {/* RIEL. Logo */}
@@ -44,7 +44,7 @@ export default function Navbar() {
                 
                 {/* Mobile Button End */}
             </div>
-        </div>
+        </nav>
         // COntainer End
     );
 }

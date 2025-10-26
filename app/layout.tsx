@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const lato = Lato({ subsets: ['latin'], weight: ["100", "300", "400", "700", "900"] });
 
@@ -21,10 +22,11 @@ export default function RootLayout({
         className={lato.className}>
         <Navbar />
         {/* Main Content - Padding Y-axis Only */}
-        <main className="py-40">
+        <main className="py-40 grow">
           {children}
         </main>
         {/* Main Content End */}
+        <Footer />
       </body>
     </html>
   );
