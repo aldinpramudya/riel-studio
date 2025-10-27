@@ -89,9 +89,9 @@ export default function Home() {
           {/* Why Choose Typography End*/}
           {/* Card Rounded */}
           <div className="pt-10 grid grid-cols-1 gap-13">
-            <CardPointRounded icon={<MdOutlineSupportAgent size={45} />} cardTitle="End to End Support" cardContent="RIEL.studio make sure will be there at every stage, from designing your website to maintaining it for long-term growth" />
-            <CardPointRounded icon={<LuTabletSmartphone size={45} />} cardTitle="Responsive. Reliable. Ready." cardContent="Websites that adapt to every device. Optimized for desktop, tablet, and mobile with continuous support you can count on." />
-            <CardPointRounded icon={<AiOutlineThunderbolt size={45} />} cardTitle="Fast Loading" cardContent="Fast-loading, high-performing websites that keep your audience engaged from the first click." />
+            <CardPointRounded icon={<MdOutlineSupportAgent size={45} />} cardTitle="End to End Support" cardContent="RIEL.studio make sure will be there at every stage, from designing your website to maintaining it for long-term growth" cardTitleClassName="text-[35px]" cardContentClassName="text-[24px]"/>
+            <CardPointRounded icon={<LuTabletSmartphone size={45} />} cardTitle="Responsive. Reliable. Ready." cardContent="Websites that adapt to every device. Optimized for desktop, tablet, and mobile with continuous support you can count on." cardTitleClassName="text-[35px]" cardContentClassName="text-[24px]" />
+            <CardPointRounded icon={<AiOutlineThunderbolt size={45} />} cardTitle="Fast Loading" cardContent="Fast-loading, high-performing websites that keep your audience engaged from the first click." cardTitleClassName="text-[35px]" cardContentClassName="text-[24px]" />
           </div>
           {/* Card Rounded End */}
         </div>
