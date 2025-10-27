@@ -18,7 +18,7 @@ import { IoCall } from "react-icons/io5";
 export default function Home() {
   return (
     <>
-      {/* Container Padding X-axis and little bit */}
+      {/* Container Padding X-axis and little bit Padding Y-axis*/}
       <div className="px-50 py-15">
         {/* Hero Centered Content Container */}
         <div id="hero" className="text-center">
