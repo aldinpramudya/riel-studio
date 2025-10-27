@@ -14,7 +14,7 @@ export default function Card({
     children,
 }: CardProps) {
     return (
-        <div className="border border-(--main-color) w-[418px] rounded-2xl px-10 py-10 
+        <div className="relative border border-(--main-color) w-[418px] rounded-2xl px-10 py-10 overflow-hidden  
                transition-all duration-300 ease-out 
                hover:scale-105 hover:shadow-lg hover:-translate-y-1">
             {/* Border Icon */}
@@ -24,7 +24,7 @@ export default function Card({
             <p className="text-[30px] font-bold pt-3">
                 {cardTitle}
             </p>
-            <div className="pt-1 text-[15px] text-justify">
+            <div className="pt-1 text-[15px] text-justify pb-16">
                 {children}
             </div>
         </div>

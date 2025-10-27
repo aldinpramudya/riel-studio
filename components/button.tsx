@@ -6,6 +6,8 @@ interface ButtonInterface {
     onClick?: () => void;
     type?: "button" | "submit" | "reset";
     variant?: "primary" | "secondary";
+    className? : string;
+    labelClassName?: string;
 }
 
 export default function Button({
@@ -14,6 +16,8 @@ export default function Button({
     onClick,
     type = "button",
     variant = "primary",
+    className = "",
+    labelClassName = "",
 }: ButtonInterface) {
     const baseStyle = "inline-flex items-center justify-center gap-2 font-semibold rounded-xl py-3 px-6";
 
@@ -31,9 +35,9 @@ export default function Button({
         <button
             type={type}
             onClick={onClick}
-            className={`${baseStyle} ${variantStyles[variant]}`}
+            className={`${baseStyle} ${variantStyles[variant]} ${className}`}
         >
-            <span>{label}</span>
+            <span className={`${labelClassName}`}>{label}</span>
             {icon && <span className={`${colorIcon}`}>{icon}</span>}
         </button>
     );
