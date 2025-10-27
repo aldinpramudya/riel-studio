@@ -3,13 +3,15 @@ import { ReactNode } from "react";
 interface CardProps {
     icon?: ReactNode;
     cardTitle: string;
-    cardContent: string;
+    // cardContent: string;
+    children?: ReactNode;
 }
 
 export default function Card({
     icon,
     cardTitle,
-    cardContent,
+    // cardContent,
+    children,
 }: CardProps) {
     return (
         <div className="border border-(--main-color) w-[418px] rounded-2xl px-10 py-10 
@@ -22,9 +24,9 @@ export default function Card({
             <p className="text-[30px] font-bold pt-3">
                 {cardTitle}
             </p>
-            <p className="pt-1 text-[15px] text-justify">
-                {cardContent}
-            </p>
+            <div className="pt-1 text-[15px] text-justify">
+                {children}
+            </div>
         </div>
     )
 }

@@ -61,8 +61,12 @@ export default function Home() {
           </div>
           {/* Card */}
           <div className="flex justify-center pt-10 gap-30 flex-wrap">
-            <Card icon={<MdOutlineColorLens size={32} />} cardTitle="UI/UX Design" cardContent="Empower your journey with designs that inspire, engage, and guide users seamlessly." />
-            <Card icon={<IoCodeSlash size={32} />} cardTitle="Custom Development" cardContent="Kickstart your idea with a fully tailored website — designed, built, and deployed to empower your journey from concept to reality." />
+            <Card icon={<MdOutlineColorLens size={32} />} cardTitle="UI/UX Design">
+              <p>Empower your journey with designs that inspire, engage, and guide users seamlessly.</p>
+            </Card>
+            <Card icon={<IoCodeSlash size={32} />} cardTitle="Custom Development">
+              <p>Kickstart your idea with a fully tailored website — designed, built, and deployed to empower your journey from concept to reality.</p>
+            </Card>
           </div>
           {/* Card End */}
         </div>

@@ -14,8 +14,18 @@ export default function About() {
         <>
             {/* Container Padding X-Axis and Liitle bit */}
             <div className="px-50">
+                <div className="text-center">
+                    {/* Title */}
+                    <h1 className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                        about RIEL.studio
+                    </h1>
+                    <p className="text-[24px] font-bold">
+                        Learn more about who we are and what we believe.
+                    </p>
+                    {/* Title End*/}
+                </div>
                 {/* About Riel.studio */}
-                <div className="grid grid-cols-2 items-center px-55">
+                <div className="grid grid-cols-2 items-center px-55 pt-20">
                     <Image
                         src="/images/Black On White.png"
                         alt="RIEL.logo"
@@ -24,12 +34,12 @@ export default function About() {
                         className="rounded-full border border-(--main-color)"
                     />
                     <div>
-                        <h1 className="font-bold text-(--main-color) text-[32px]">
-                            About RIEL.studio
-                        </h1>
+                        <p className="font-bold text-(--main-color) text-[32px]">
+                            Hello !
+                        </p>
                         <p className="text-[20px] text-justify">
                             <span className="font-bold">
-                                Hi, I&apos;m Riel, the mind behind RIEL.studio. <br />
+                                I&apos;m Riel, the mind behind RIEL.studio. <br />
                             </span>
                             I collaborate with brands, startups, and individuals to craft digital experiences that are striking and purposefully. <br />
                             Every journey starts with a idea — <br />
@@ -42,7 +52,7 @@ export default function About() {
                 </div>
                 {/* About Riel.studio End */}
                 {/* Tagline RIEL.studio */}
-                <div className="pt-20">
+                <div className="pt-10">
                     {/* Title */}
                     <p className="text-center capitalize font-bold text-[32px] text-(--main-color) pt-30">
                         behind the words
@@ -62,8 +72,16 @@ export default function About() {
                             </p>
                         </div>
                         <div className="flex space-x-5">
-                            <Card icon={<PiTargetBold size={32}/>} cardTitle="Our Goal" cardContent="To help individuals and brand kickstart their ideas and turn them into meaningful digital experiences. Through thoughtful design and seamless development, we aim to empower every journey from concept to creation."/>
-                            <Card icon={<PiStarFourBold size={32}/>} cardTitle="Our Vision" cardContent="To be creative partner where every idea - no matter how small - finds its spark. RIEL.studio envision a world where creativity is not limited by fear and doubt, but empowered by collaboration, innovation, and purpose "/>
+                            <Card icon={<PiTargetBold size={32} />} cardTitle="Our Goal">
+                                <p>
+                                    To help individuals and brand kickstart their ideas and turn them into meaningful digital experiences. Through thoughtful design and seamless development, <span className="font-bold">RIEL.studio aim to empower every journey from concept to creation.</span>
+                                </p>
+                            </Card>
+                            <Card icon={<PiStarFourBold size={32} />} cardTitle="Our Vision">
+                                <p>
+                                    To be creative partner where every idea - no matter how small - finds its spark. <span className="font-bold">RIEL.studio envision a world where creativity is not limited by fear and doubt, but empowered by collaboration, innovation, and purpose.</span> 
+                                </p>
+                            </Card>
                         </div>
                     </div>
                     {/* Typography and Card End */}
