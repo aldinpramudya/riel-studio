@@ -66,7 +66,7 @@ export default function Services() {
                     {/* Marquee */}
                     <div className="space-x-3 space-y-3 text-center pt-10">
                         {pillBadgesData.map((data) => (
-                            <PillBadges key={data.id} label={data.label} icon={data.icon} hexColor={data.hexColor} />
+                            <PillBadges key={data.id} label={data.label} icon={data.icon} hexColor={data.hexColor}  />
                         ))}
                     </div>
                     <div className="pt-5 flex justify-center">
