@@ -21,7 +21,7 @@ export default function CardTestimonies(
             {/* Testimonies */}
             <div className="pt-3">
                 <ImQuotesRight size={40} color="#FF4F04" />
-                <p className="font-bold">
+                <p className="font-bold text-justify">
                     {testimonyText}
                 </p>
             </div>

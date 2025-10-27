@@ -22,7 +22,7 @@ export default function Card({
             <p className="text-[30px] font-bold pt-3">
                 {cardTitle}
             </p>
-            <p className="pt-1 text-[15px]">
+            <p className="pt-1 text-[15px] text-justify">
                 {cardContent}
             </p>
         </div>
