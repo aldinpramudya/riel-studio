@@ -4,6 +4,7 @@ import Link from "next/link";
 // Icon
 import { MdOutlineEmail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa6"
 
 // FOOTER ON THE WAY
 export default function Footer() {
@@ -28,7 +29,7 @@ export default function Footer() {
                 </div>
                 {/* Navigation */}
                 <div className="flex flex-col capitalize mt-6">
-                    <p className="font-bold">navigation</p>
+                    <p className="font-bold">navigations</p>
                     <div className="flex flex-col space-y-2 mt-3">
                         <Link href="/" className="">home</Link>
                         <Link href="/about" className="">about</Link>
@@ -39,12 +40,21 @@ export default function Footer() {
                 </div>
                 {/* Contact */}
                 <div className="mt-6">
-                    <p className="font-bold">Contact</p>
+                    <p className="font-bold">Contacts</p>
                     <div className="flex flex-col space-y-2 mt-3">
-                        <p>
-                            <MdOutlineEmail color="#FF4F04"/> <a href="mailto:rielelesia@gmail.com">rielelesia@gmail.com</a>
-                        </p>
-                        <IoCallOutline color="#FF4F04" /> <a href="tel:+6281234567890">+62 812-3456-7890</a>
+                        <div className="flex items-center gap-2">
+                            <MdOutlineEmail color="#FF4F04" /> <a href="mailto:rielelesia@gmail.com" target="_blank">rielelesia@gmail.com</a>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <IoCallOutline color="#FF4F04" /> <a href="tel:+6281234567890" target="_blank">+62 812-3456-7890</a>
+                        </div>
+                    </div>
+                </div>
+                {/* Contact End */}
+                <div className="mt-6">
+                    <p className="font-bold">Socials</p>
+                    <div className="flex items-center gap-2 mt-3">
+                        <FaInstagram color="#FF4F04" /> <a href="https://www.instagram.com/riel.studio_/" target="_blank">riel.studio_</a>
                     </div>
                 </div>
             </div>
