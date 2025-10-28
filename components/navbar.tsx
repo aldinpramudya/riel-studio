@@ -26,11 +26,12 @@ export default function Navbar() {
                     {/* RIEL. Logo End */}
                     {/* Menu */}
                     <div className="hidden md:flex space-x-8 text-black font-bold capitalize">
-                        <Link href="/" className="">home</Link>
-                        <Link href="/about" className="">about</Link>
-                        <Link href="/services" className="">services</Link>
-                        <Link href="/portfolio" className="">portfolio</Link>
-                        <Link href="/contact" className="">contact</Link>
+                        <Link href="/" className="text-black">home</Link>
+                        <Link href="/about" className="text-black">about</Link>
+                        <Link href="/services" className="text-black">services</Link>
+                        <Link href="/portfolio" className="text-black">portfolio</Link>
+                        <Link href="/contact" className="text-black">contact</Link>
+                        <Link href="/student-kickstart" className="bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">#studentKickstart</Link>
                     </div>
                     {/* Menu End */}
                 </div>
