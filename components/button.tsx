@@ -7,7 +7,7 @@ interface ButtonInterface {
     icon?: ReactNode;
     onClick?: () => void;
     type?: "button" | "submit" | "reset";
-    variant?: "primary" | "secondary";
+    variant?: "primary" | "secondary" | "white";
     className? : string;
     labelClassName?: string;
 }
@@ -26,11 +26,13 @@ export default function Button({
     const variantStyles = {
         primary: "bg-(--main-color) text-white text-lg hover:bg-(--main-color-hover) transition-all duration-500",
         secondary: "text-(--main-color) text-lg border border-(--main-color) hover:bg-(--main-color) hover:text-white transition-all duration-500",
+        white : "bg-white text-(--main-color) text-lg hover:bg-(--main-color) hover:text-white transition-all duration-500"
     }
 
     const colorIcon = {
         primary: "text-white",
-        secondary : "text-(--main-color)"
+        secondary : "text-(--main-color)",
+        white : "text-(--main-color)"
     }
 
     return (

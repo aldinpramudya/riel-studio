@@ -40,6 +40,37 @@ export const servicesPackage = [
     },
 ];
 
+export const servicesPackageStudent = [
+    {
+        id: 1,
+        packageName: "Vision Package",
+        icon: <IoIosBrush size={32} />,
+        description: "Perfect for crafting intuitive interfaces, elevating user experience, and transforming ideas into engaging digital products.",
+        points: [
+            "Premium UI/UX Design",
+            "~ 7-9 days work",
+            "Comprehensive user & persona research",
+            "Wireframing and prototyping for testing",
+            "Presentation model or booklet design if needed",
+        ],
+        price: "Starting at IDR. 250.000,-",
+    }, {
+        id: 2,
+        packageName: "Launcher Package",
+        icon: <TiCode size={32} />,
+        description: " Perfect for launching products, showcasing portfolio, promoting event, and introduce your brand.",
+        points: [
+            "1 Year Included Domain (.com)",
+            "Security SSL Certificated (HTTPS)",
+            "1-2 weeks works",
+            "1 Page Premium Design",
+            "Basic SEO",
+            "Responsive Design Through Devices"
+        ],
+        price:"Starting at IDR. 600.000,-",
+    },
+];
+
 export const pillBadgesData = [
     { id: 1, label: "E-Learning Websites", icon: <FaGraduationCap />, hexColor: "#150578" },
     { id: 2, label: "Company Profile Websites", icon: <FaCity />, hexColor: "#674ca1" },
