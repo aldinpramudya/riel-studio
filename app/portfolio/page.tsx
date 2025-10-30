@@ -7,7 +7,7 @@ export default function Portfolio() {
     return (
         <>
             {/* Container */}
-            <div className="px-50">
+            <div className="md:px-50 px-10">
                 <Title />
                 <CardPortfolioList/>
                 <Testimonies />
