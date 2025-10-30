@@ -29,6 +29,21 @@ export default function Navbar() {
                         className="w-[90px] md:w-[126px]" // sedikit kecil di mobile
                     />
                 </div>
+                {/* DESKTOP Menu */}
+                <div className="hidden md:flex space-x-8 text-black font-bold capitalize ml-10">
+                    <Link href="/" className="text-black">home</Link>
+                    <Link href="/about" className="text-black">about</Link>
+                    <Link href="/services" className="text-black">services</Link>
+                    <Link href="/portfolio" className="text-black">portfolio</Link>
+                    <Link href="/contact" className="text-black">contact</Link>
+                    <Link
+                        href="/student-kickstart"
+                        className="bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent"
+                    >
+                        #studentKickstart
+                    </Link>
+                </div>
+
 
                 {/* RIGHT: Icons + Mobile Menu Button */}
                 <div className="flex items-center space-x-3 md:space-x-4">
@@ -46,21 +61,6 @@ export default function Navbar() {
                     >
                         {isOpen ? <IoClose size={28} /> : <RiMenu3Fill size={28} />}
                     </button>
-                </div>
-
-                {/* DESKTOP Menu */}
-                <div className="hidden md:flex space-x-8 text-black font-bold capitalize ml-10">
-                    <Link href="/" className="text-black">home</Link>
-                    <Link href="/about" className="text-black">about</Link>
-                    <Link href="/services" className="text-black">services</Link>
-                    <Link href="/portfolio" className="text-black">portfolio</Link>
-                    <Link href="/contact" className="text-black">contact</Link>
-                    <Link
-                        href="/student-kickstart"
-                        className="bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent"
-                    >
-                        #studentKickstart
-                    </Link>
                 </div>
             </div>
 
