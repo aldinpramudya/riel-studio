@@ -22,7 +22,7 @@ export default function RootLayout({
         className={lato.className}>
         <Navbar />
         {/* Main Content - Padding Y-axis Only */}
-        <main className="py-40 grow">
+        <main className="md:px-40 md:py-20 py-10">
           {children}
         </main>
         {/* Main Content End */}

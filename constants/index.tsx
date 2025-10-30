@@ -118,5 +118,4 @@ export const frequentlyAskedQuestionData = [
         question : "My projects or idea seems not on one of your Services package, can i still work with you ?",
         answer : "Absolutely! Don't worry — even if your idea isn't listed in our packages, you can still collaborate with RIEL.studio.We're always open to explore new ideas and will do our best to help bring your project to life."
     }
-]
-
+];
