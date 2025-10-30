@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* Container Padding X-axis and little bit Padding Y-axis*/}
-      <div className="md:px-50 md:py-15 px-10">
+      <div className="md:px-50 px-10">
         <Hero />
         <Services />
         <WhyChooseUs/>

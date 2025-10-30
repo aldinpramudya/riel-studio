@@ -7,7 +7,7 @@ export default function About() {
     return (
         <>
             {/* Container Padding X-Axis and Liitle bit */}
-            <div className="px-50">
+            <div className="md:px-50 px-10">
                 <Hero />
                 <AboutTagline/>
                 <Cta />
