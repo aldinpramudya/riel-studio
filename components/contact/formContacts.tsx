@@ -7,11 +7,11 @@ export default function FormContact() {
     return (
         <>
             {/* Form and Contact Details */}
-            <div className="flex flex-row flex-wrap pt-15 pr-35 justify-center space-x-20">
+            <div className="flex md:flex-row flex-col flex-wrap pt-15 pr-35 justify-center space-x-20">
                 <Form />
                 {/* Links */}
                 <div>
-                    <p className="text-[25px] font-bold text-(--main-color)">
+                    <p className="text-[25px] font-bold text-(--main-color) md:pt-0 pt-5">
                         Reach RIEL.studio Here
                     </p>
                     {/* Links Contacts */}

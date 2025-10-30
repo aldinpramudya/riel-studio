@@ -3,7 +3,7 @@ import { LuSend } from "react-icons/lu";
 
 export default function Form() {
     return (
-        <div className="border border-(--main-color) w-[480px] px-10 py-10">
+        <div className="border border-(--main-color) md:w-[480px] w-[300px] px-10 py-10">
             <p className="text-[25px] font-bold text-(--main-color)">
                 Send a Message
             </p>

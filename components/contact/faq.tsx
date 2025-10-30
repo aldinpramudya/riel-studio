@@ -13,11 +13,11 @@ export default function Faq() {
         <>
             {/* FAQ */}
             <div className="text-center pt-20">
-                <p className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                <p className="capitalize font-bold md:text-[64px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                     Frequently Asked Question
                 </p>
                 {/* Accordion */}
-                <div className="px-40 pt-10">
+                <div className="md:px-40 pt-10">
                     <Accordion
                         type="single"
                         collapsible
