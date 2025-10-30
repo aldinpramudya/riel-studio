@@ -12,16 +12,16 @@ export default function Hero() {
             {/* Title */}
             <div className="text-center">
                 {/* Title */}
-                <h1 className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                <h1 className="capitalize font-bold md:text-[64px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                     RIEL.studio services
                 </h1>
-                <p className="text-[24px] font-bold">
+                <p className="md:text-[24px] text-lg font-bold">
                     Explore what we can create together.
                 </p>
                 {/* Title End*/}
             </div>
             {/* Card */}
-            <div className="flex justify-center pt-10 space-x-20 ">
+            <div className="flex justify-center pt-10 md:gap-10 gap-10 flex-wrap">
                 {servicesPackage.map((service) => (
                     <Card key={service.id} icon={service.icon} cardTitle={service.packageName}>
                         <p>
@@ -35,7 +35,10 @@ export default function Hero() {
                                 </li>
                             ))}
                         </ul>
-                        <div className="absolute bottom-8 left-8 right-8">
+                        {/* Gap for Mobile */}
+                        <div className="mt-13"></div>
+                        {/* Gap For Mobile End */}
+                        <div className="absolute mt-14 bottom-8 left-8 right-8">
                             <Button label={service.price} variant="secondary"></Button>
                         </div>
                     </Card>

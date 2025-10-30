@@ -12,10 +12,10 @@ export default function CustomDevelopment() {
             <div className="pt-30">
                 {/* Typography */}
                 <div className="text-center">
-                    <p className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                    <p className="capitalize font-bold md:text-[64px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                         bigger ideas ?, no problem !
                     </p>
-                    <p className="text-[24px] font-bold">
+                    <p className="md:text-[24px] text-lg font-bold">
                         We&apos;re ready to kickstart it with you !
                     </p>
                 </div>
