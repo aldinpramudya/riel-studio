@@ -7,7 +7,7 @@ import Cta from "@/components/contact/cta";
 export default function Contact() {
     return (
         <>
-            <div className="px-50">
+            <div className="md:px-50 px-10">
                 <Title />
                 <FormContact />
                 <Faq />

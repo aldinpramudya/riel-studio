@@ -44,7 +44,7 @@ export default function CardPortfolio({
             </div>
             {/* Typography End */}
             {/* Buttons*/}
-            <div className="px-10 pb-10 space-x-3">
+            <div className="flex md:flex-row flex-col px-10 pb-10 space-x-3 space-y-2">
                 <a href={portfolioLiveDemoLink} target="_blank">
                     <Button label="Live Demo" labelClassName="text-[14px]" icon={<RxOpenInNewWindow />} />
                 </a>
