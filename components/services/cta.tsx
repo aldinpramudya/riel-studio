@@ -11,16 +11,16 @@ export default function Cta() {
             <div className="pt-40">
                 {/* Typography */}
                 <div className="text-center">
-                    <p className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                    <p className="capitalize font-bold md:text-[64px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                         ready to kickstart yours ?
                     </p>
-                    <p className="font-bold text-[24px]">
+                    <p className="font-bold md:text-[24px] text-lg">
                         Now it&apos;s your turn to bring yours to life !
                     </p>
                 </div>
                 {/* Typography End */}
                 {/* Button */}
-                <div className="flex justify-center space-x-5 pt-10">
+                <div className="flex flex-col md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
                     <Button label="Kickstart Now" icon={<IoCall />} variant="primary" />
                     <Button label="See RIEL.studio Portfolio" icon={<FaArrowRight />} variant="secondary" />
                 </div>

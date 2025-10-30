@@ -7,7 +7,7 @@ export default function Services() {
     return (
         <>
             {/* Container */}
-            <div className="px-50">
+            <div className="md:px-50 px-10">
                 <Hero />
                 <CustomDevelopment />
                 <Workflow />
