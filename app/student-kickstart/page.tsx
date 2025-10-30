@@ -122,16 +122,7 @@ export default function StudentKickstart() {
                         ))}
                     </div>
                 </div>
-                {/* Pricing */}
-                <div className="pt-15">
-
-                </div>
-                {/* How it Works */}
-                <div className="pt-15">
-                    <p className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
-                        <span className="text-[#343434]">How it Works</span> #StudentKickstart
-                    </p>
-                </div>
+                {/* Pricing End */}
                 {/* How it Works End */}
                 {/* CTA */}
                 <div className="pt-20">
