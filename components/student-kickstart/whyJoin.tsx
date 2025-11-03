@@ -10,10 +10,10 @@ export default function WhyJoin() {
         <>
             {/* Why Join Here */}
             <div className="pt-15">
-                <p className="capitalize font-bold text-[64px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                <p className="capitalize font-bold md:text-[64px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                     <span className="text-[#343434]">Why join</span> #StudentKickstart ?
                 </p>
-                <div className="flex space-x-5 justify-center pt-5">
+                <div className="flex justify-center pt-10 md:gap-10 gap-10 flex-wrap">
                     <Card icon={<MdOutlineDiscount size={32} />} cardTitle="Special Pricing">
                         <p>
                             Kickstart with special prices — making it easier for you to start without breaking your budget.

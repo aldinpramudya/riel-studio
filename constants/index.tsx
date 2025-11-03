@@ -85,7 +85,7 @@ export const pillBadgesData = [
 export const workflowData = [
     { id: 1, cardTitle: "Understanding Your Vision", icon: <PiBrain />, cardContent: "We take time to learn what you need, what you dream of, and what success means for you." },
     { id: 2, cardTitle: "Designing Your Experience", icon: <FaPaintBrush />, cardContent: "Ideas start to take shape through clear structure, intuitive flow, and a design that reflects your identity." },
-    { id: 3, cardTitle: "Developing With Purposes", icon: <TiCode />, cardContent: "We turn design into a fully functional website — fast, responsive, and built to last." },
+    { id: 3, cardTitle: "Developing With Purposes", icon: <TiCode />, cardContent: "We turn design into a fully functional website. fast, responsive, and built to last." },
     { id: 4, cardTitle: "Long-Term Maintenance", icon: <IoRocket />, cardContent: "Because great ideas don't stop at launch. We ensure everything runs perfectly long after going live." }
 ];
 
