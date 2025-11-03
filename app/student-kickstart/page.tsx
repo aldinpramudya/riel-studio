@@ -7,7 +7,7 @@ import Cta from "@/components/student-kickstart/cta";
 export default function StudentKickstart() {
     return (
         <>
-            <div className="px-50">
+            <div className="md:px-40 px-10">
                 <CardHero/>
                 <WhatSection />
                 <WhyJoin />

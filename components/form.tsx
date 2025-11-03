@@ -20,7 +20,7 @@ export default function Form() {
                     </div>
                     <div className="pt-5">
                         <label htmlFor="" className="font-bold">Subject Interested In</label>
-                        <select className="mt-2 border border-[#343434] rounded-sm flex w-full px-5 py-3">
+                        <select className="mt-2 border border-[#343434] rounded-sm flex w-full px-3 py-3">
                             <option defaultValue="Choose subject you interested in" >Choose subject you interested in</option>
                             <option value="A">A</option>
                             <option value="A">A</option>
