@@ -1,7 +1,7 @@
 import Hero from "@/components/services/hero";
 import CustomDevelopment from "@/components/services/customDevelopment";
 import Workflow from "@/components/services/workflow";
-import Cta from "@/components/services/cta";
+import Cta from "@/components/cta";
 
 export default function Services() {
     return (
@@ -11,7 +11,7 @@ export default function Services() {
                 <Hero />
                 <CustomDevelopment />
                 <Workflow />
-                <Cta />
+                <Cta title="ready to kickstart yours ?" subTitle=" Now it&apos;s your turn to bring yours to life !" />
             </div>
             {/* Container End */}
         </>

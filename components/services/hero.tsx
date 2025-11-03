@@ -1,5 +1,8 @@
+import Link from "next/link";
+
 // Const
 import { servicesPackage } from "@/constants";
+
 // Components
 import Card from "@/components/card";
 import Button from "@/components/button";
@@ -39,7 +42,9 @@ export default function Hero() {
                         <div className="mt-13"></div>
                         {/* Gap For Mobile End */}
                         <div className="absolute mt-14 bottom-8 left-8 right-8">
-                            <Button label={service.price} variant="secondary"></Button>
+                            <Link href={service.linkWhatsapp} target="_blank">
+                                <Button label={service.price} variant="secondary"></Button>
+                            </Link>
                         </div>
                     </Card>
                 ))}

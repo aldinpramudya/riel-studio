@@ -2,7 +2,7 @@ import CardHero from "@/components/student-kickstart/cardHero";
 import WhatSection from "@/components/student-kickstart/whatSection";
 import WhyJoin from "@/components/student-kickstart/whyJoin";
 import Pricing from "@/components/student-kickstart/pricing";
-import Cta from "@/components/student-kickstart/cta";
+import Cta from "@/components/cta";
 
 export default function StudentKickstart() {
     return (
@@ -12,7 +12,7 @@ export default function StudentKickstart() {
                 <WhatSection />
                 <WhyJoin />
                 <Pricing />
-                <Cta/>
+                <Cta title="ready to kickstart with #studentKickstart ?" subTitle="Whether you&apos;re a student, a dreamer, or a future creator. let&apos;s make your idea happen." />
             </div>
         </>
     )

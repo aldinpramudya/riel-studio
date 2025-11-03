@@ -3,7 +3,7 @@ import Hero from "@/components/home/hero";
 import Services from "@/components/home/services";
 import WhyChooseUs from "@/components/home/whyChoose";
 import Testimonies from "@/components/home/testimonies";
-import Cta from "@/components/home/cta";
+import Cta from "@/components/cta";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs/>
         <Testimonies />
-        <Cta/>
+        <Cta title="ready to kickstart yours ?" subTitle=" Now it&apos;s your turn to bring yours to life !"/>
       </div>
       {/* Container Padding X-axis and little bit End */}
     </>
