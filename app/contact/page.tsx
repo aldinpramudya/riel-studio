@@ -1,7 +1,7 @@
-import Title from "@/components/portfolio/title";
+import Title from "@/components/contact/title";
 import FormContact from "@/components/contact/formContacts";
 import Faq from "@/components/contact/faq";
-import Cta from "@/components/contact/cta";
+import Cta from "@/components/cta";
 
 
 export default function Contact() {
@@ -11,7 +11,7 @@ export default function Contact() {
                 <Title />
                 <FormContact />
                 <Faq />
-                <Cta />
+                <Cta title="ready to kickstart yours ?" subTitle=" Now it&apos;s your turn to bring yours to life !" />
             </div>
         </>
     )

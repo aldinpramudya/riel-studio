@@ -1,4 +1,5 @@
 import Card from "@/components/card";
+import Link from "next/link";
 
 import { servicesPackageStudent } from "@/constants";
 
@@ -33,7 +34,9 @@ export default function Pricing() {
                             <div className="mt-13"></div>
                             {/* Gap For Mobile End */}
                             <div className="absolute bottom-8 left-8 right-8">
-                                <Button label={service.price} variant="secondary" icon={<MdDiscount />}></Button>
+                                <Link href={service.linkWhatsapp} target="_blank">
+                                    <Button label={service.price} variant="secondary" icon={<MdDiscount />}></Button>
+                                </Link>
                             </div>
                         </Card>
                     ))}

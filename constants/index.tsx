@@ -23,6 +23,7 @@ export const servicesPackage = [
             "Presentation model or booklet design if needed",
         ],
         price: "Starting at IDR. 300.000,-",
+        linkWhatsapp: "https://wa.me/6285954352919?text=Halo%20RIEL.studio%21%0ASaya%20tertarik%20dengan%20layanan%20Vision%20Package%20dan%20ingin%20tahu%20lebih%20lanjut%20tentang%20prosesnya.%0AApakah%20saya%20bisa%20mendapatkan%20detail%20lebih%20lanjut%2C%20ya%3F"
     }, {
         id: 2,
         packageName: "Launcher Package",
@@ -37,6 +38,8 @@ export const servicesPackage = [
             "Responsive Design Through Devices"
         ],
         price: "Starting at IDR. 650.000,-",
+        linkWhatsapp: "https://wa.me/6285954352919?text=Halo%20RIEL.studio%21%0ASaya%20tertarik%20dengan%20layanan%20Launcher%20Package%20dan%20ingin%20tahu%20lebih%20lanjut%20tentang%20prosesnya.%0AApakah%20saya%20bisa%20mendapatkan%20detail%20lebih%20lanjut%2C%20ya%3F"
+
     },
 ];
 
@@ -54,6 +57,7 @@ export const servicesPackageStudent = [
             "Presentation model or booklet design if needed",
         ],
         price: "Starting at IDR. 250.000,-",
+        linkWhatsapp: "https://wa.me/6285954352919?text=Halo%20RIEL.studio%21%0ASaya%20tertarik%20dengan%20layanan%20%23StudentKickstart%20dan%20ingin%20tahu%20lebih%20lanjut%20tentang%20prosesnya.%0AApakah%20saya%20bisa%20mendapatkan%20detail%20lebih%20lanjut%2C%20ya%3F"
     }, {
         id: 2,
         packageName: "Launcher Package",
@@ -67,7 +71,8 @@ export const servicesPackageStudent = [
             "Basic SEO",
             "Responsive Design Through Devices"
         ],
-        price:"Starting at IDR. 600.000,-",
+        price: "Starting at IDR. 600.000,-",
+        linkWhatsapp: "https://wa.me/6285954352919?text=Halo%20RIEL.studio%21%0ASaya%20tertarik%20dengan%20layanan%20%23StudentKickstart%20dan%20ingin%20tahu%20lebih%20lanjut%20tentang%20prosesnya.%0AApakah%20saya%20bisa%20mendapatkan%20detail%20lebih%20lanjut%2C%20ya%3F"
     },
 ];
 
@@ -114,8 +119,8 @@ export const frequentlyAskedQuestionData = [
         answer: "Yes, we offer maintenance plans to ensure your websites and projects stays fast, secure and up-to-date"
     },
     {
-        itemValue : "item-4",
-        question : "My projects or idea seems not on one of your Services package, can i still work with you ?",
-        answer : "Absolutely! Don't worry — even if your idea isn't listed in our packages, you can still collaborate with RIEL.studio.We're always open to explore new ideas and will do our best to help bring your project to life."
+        itemValue: "item-4",
+        question: "My projects or idea seems not on one of your Services package, can i still work with you ?",
+        answer: "Absolutely! Don't worry — even if your idea isn't listed in our packages, you can still collaborate with RIEL.studio.We're always open to explore new ideas and will do our best to help bring your project to life."
     }
 ];

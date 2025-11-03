@@ -3,6 +3,8 @@ import Button from "@/components/button";
 import { FaArrowRight } from "react-icons/fa6";
 import { LuSparkles } from "react-icons/lu";
 
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <>
@@ -25,8 +27,12 @@ export default function Hero() {
                 {/* Description End*/}
                 {/* Buttons */}
                 <div className="flex flex-col md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
-                    <Button label="Start Now" icon={<LuSparkles />} variant="primary" labelClassName="text-[15px] md:text-[20px]" />
-                    <Button label="See What Riel. Built" icon={<FaArrowRight />} variant="secondary" labelClassName="text-[15px] md:text-[20px]" />
+                    <Link href="/contact">
+                        <Button label="Start Now" icon={<LuSparkles />} variant="primary" labelClassName="text-[15px] md:text-[20px]" />
+                    </Link>
+                    <Link href="/portfolio">
+                        <Button label="See What Riel. Built" icon={<FaArrowRight />} variant="secondary" labelClassName="text-[15px] md:text-[20px]" />
+                    </Link>
                 </div>
                 {/* Buttons End */}
             </div>

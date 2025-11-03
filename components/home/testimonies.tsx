@@ -4,6 +4,8 @@ import { ImQuotesRight } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa6";
 import CardTestimonies from "@/components/cardTestimonies";
 
+import Link from "next/link";
+
 export default function Testimonies() {
     return (
         <>
@@ -28,7 +30,9 @@ export default function Testimonies() {
                         All with RIEL.studio by their side.
                     </p>
                     <div className="pt-2 relative z-10">
-                        <Button label="See The Works" icon={<FaArrowRight />} variant="secondary" />
+                        <Link href="/portfolio">
+                            <Button label="See The Works" icon={<FaArrowRight />} variant="secondary" />
+                        </Link>
                     </div>
                 </div>
                 {/* TypoGraphy End */}
