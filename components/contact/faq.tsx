@@ -25,8 +25,8 @@ export default function Faq() {
                     >
                         {frequentlyAskedQuestionData.map((data) => (
                             <AccordionItem key={data.itemValue} value={data.itemValue}>
-                                <AccordionTrigger className="text-[20px] font-bold">{data.question}</AccordionTrigger>
-                                <AccordionContent className="flex flex-col gap-4 text-[16px] text-start px-5">
+                                <AccordionTrigger className="md:text-[20px] font-bold">{data.question}</AccordionTrigger>
+                                <AccordionContent className="flex flex-col gap-4 md:text-[16px] text-start px-5">
                                     <p>
                                         {data.answer}
                                     </p>

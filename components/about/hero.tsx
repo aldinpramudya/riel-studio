@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "@/components/button";
 
 import { RxOpenInNewWindow } from "react-icons/rx";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -38,7 +39,9 @@ export default function Hero() {
                         and I&apos;m here to help you kickstart it. <br />
                     </p>
                     <div className="pt-5 md:flex-none flex">
-                        <Button label="Know Riel More" variant="primary" icon={<RxOpenInNewWindow size={25} />} />
+                        <Link href="https://portoriel.elesiaa.com/" target="_blank">
+                            <Button label="Know Riel More" variant="primary" icon={<RxOpenInNewWindow size={25} />} />
+                        </Link>
                     </div>
                 </div>
             </div>
