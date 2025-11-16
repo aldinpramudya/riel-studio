@@ -1,3 +1,8 @@
+"use client"
+
+// Use Effect, State
+import { useEffect, useState } from "react";
+
 import Button from "@/components/button";
 
 import { ImQuotesRight } from "react-icons/im";
@@ -6,7 +11,30 @@ import CardTestimonies from "@/components/cardTestimonies";
 
 import Link from "next/link";
 
+// Data Types Testimonies
+import type { ITestimonies } from "@/types/testimonies";
+import { supabase } from "@/lib/db";
+
+
 export default function Testimonies() {
+    const [testimonies, setTestimonies] = useState<ITestimonies[]>([]);
+
+    useEffect(() => {
+        const fetchTestimonies = async () => {
+            const { data, error } = await supabase
+                .from('testimonies')
+                .select('*');
+            if (error) {
+                console.log('Erro Fetch Data: ', error);
+            } else {
+                setTestimonies(data);
+            }
+        };
+
+        fetchTestimonies();
+    }, [supabase]);
+
+
     return (
         <>
             {/* Testimonies */}
@@ -38,8 +66,9 @@ export default function Testimonies() {
                 {/* TypoGraphy End */}
                 {/* Cards */}
                 <div className="md:flex md:space-x-2 md:pt-0 pt-5 space-y-3">
-                    <CardTestimonies testimonyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mauris neque. Sed id dolor sed velit maximus tincidunt a at est. Vestibulum semper nisl ac suscipit consectetur" name="Riel" position="Student At Lala Land" />
-                    <CardTestimonies testimonyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mauris neque. Sed id dolor sed velit maximus tincidunt a at est. Vestibulum semper nisl ac suscipit consectetur" name="Riel" position="Student At Lala Land" />
+                    {testimonies.map((data : ITestimonies) => (
+                        <CardTestimonies key={data.id} testimonyText={data.client_testimonies} name={data.client_name} position={data.client_position}/>                        
+                    ))};
                 </div>
                 {/* Cards End*/}
             </div>

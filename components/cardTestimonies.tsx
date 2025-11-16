@@ -30,7 +30,7 @@ export default function CardTestimonies(
             <div className="flex items-center space-x-1.5 pt-10">
                 <div className="bg-(--main-color) w-1 h-12" />
                 <div>
-                    <p className=" font-bold">
+                    <p className="font-bold">
                         {name}
                     </p>
                     <p>
