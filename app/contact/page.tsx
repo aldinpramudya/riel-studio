@@ -3,6 +3,10 @@ import FormContact from "@/components/contact/formContacts";
 import Faq from "@/components/contact/faq";
 import Cta from "@/components/cta";
 
+// GSAP
+import gsap from "gsap";
+// Use GSAP Hooks
+import { useGSAP } from "@gsap/react";
 
 export default function Contact() {
     return (

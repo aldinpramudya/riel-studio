@@ -1,6 +1,34 @@
+"use client"
+
+// Use Effect, State
+import { useEffect, useState } from "react";
+
+// Components Card Testimonies
 import CardTestimonies from "@/components/cardTestimonies";
 
+// Data Types Testimonies
+import type { ITestimonies } from "@/types/testimonies";
+import { supabase } from "@/lib/db";
+
+
 export default function Testimonies() {
+    const [testimonies, setTestimonies] = useState<ITestimonies[]>([]);
+
+    useEffect(() => {
+        const fetchTestimonies = async () => {
+            const {data, error} = await supabase
+                .from('testimonies')
+                .select('*');
+            if(error){
+                console.log('Erro Fetch Data: ', error);
+            } else {
+                setTestimonies(data);
+            }
+        };
+
+        fetchTestimonies();
+    }, [supabase]);
+
     return (
         <>
             {/* Testimonies */}
@@ -17,8 +45,9 @@ export default function Testimonies() {
                 {/* Typography End */}
                 {/* Cards Testimonies */}
                 <div className="flex md:flex-row flex-col justify-center space-x-2 pt-15">
-                    <CardTestimonies testimonyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mauris neque. Sed id dolor sed velit maximus tincidunt a at est. Vestibulum semper nisl ac suscipit consectetur" name="Riel" position="Student At Lala Land" />
-                    <CardTestimonies testimonyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a mauris neque. Sed id dolor sed velit maximus tincidunt a at est. Vestibulum semper nisl ac suscipit consectetur" name="Riel" position="Student At Lala Land" />
+                    {testimonies.map((data : ITestimonies) => (
+                        <CardTestimonies key={data.id} testimonyText={data.client_testimonies} name={data.client_name} position={data.client_position}/>                        
+                    ))};
                 </div>
                 {/* Card Testimonies */}
             </div>
