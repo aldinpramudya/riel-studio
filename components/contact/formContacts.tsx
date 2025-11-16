@@ -7,7 +7,7 @@ export default function FormContact() {
     return (
         <>
             {/* Form and Contact Details */}
-            <div className="flex md:flex-row flex-col flex-wrap pt-15 pr-35 justify-center space-x-20">
+            <div className="flex md:flex-row flex-col flex-wrap pt-15 justify-evenly">
                 <Form />
                 {/* Links */}
                 <div>
