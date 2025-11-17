@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Icons
-import { LuSunMedium } from "react-icons/lu";
-import { BsTranslate } from "react-icons/bs";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 
@@ -30,7 +28,7 @@ export default function Navbar() {
                     />
                 </div>
                 {/* DESKTOP Menu */}
-                <div className="hidden md:flex space-x-8 text-black font-bold capitalize ml-10">
+                <div className="hidden md:flex space-x-10 text-black font-bold capitalize">
                     <Link href="/" className="text-black">home</Link>
                     <Link href="/about" className="text-black">about</Link>
                     <Link href="/services" className="text-black">services</Link>
@@ -46,13 +44,7 @@ export default function Navbar() {
 
 
                 {/* RIGHT: Icons + Mobile Menu Button */}
-                <div className="flex items-center space-x-3 md:space-x-4">
-                    {/* Icons - visible both desktop & mobile */}
-                    <div className="flex items-center space-x-3 text-xl md:text-[43px]">
-                        <LuSunMedium className="cursor-pointer" />
-                        <BsTranslate className="cursor-pointer" />
-                    </div>
-
+                <div className="flex items-center space-x-2 md:space-x-3">
                     {/* Mobile Menu Button */}
                     <button
                         onClick={toggleMenu}
