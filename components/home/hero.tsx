@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
                 {/* Description End*/}
                 {/* Buttons */}
-                <div className="flex flex-col md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
+                <div className="flex flex-wrap md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
                     <Link href="/contact">
                         <Button label="Start Now" icon={<LuSparkles />} variant="primary" labelClassName="text-[15px] md:text-[20px]" />
                     </Link>

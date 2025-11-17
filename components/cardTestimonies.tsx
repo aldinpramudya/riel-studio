@@ -16,7 +16,7 @@ export default function CardTestimonies(
     }: CardTestimoniesProps
 ) {
     return (
-        <div className="px-10 py-10 shadow-xl w-[320px]">
+        <div className="px-10 py-10 shadow-xl md:w-[370px]">
             <BsPersonCircle size={40} />
             {/* Testimonies */}
             <div className="pt-3">

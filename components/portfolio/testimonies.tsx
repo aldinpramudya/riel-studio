@@ -20,7 +20,7 @@ export default function Testimonies() {
                 .from('testimonies')
                 .select('*');
             if(error){
-                console.log('Erro Fetch Data: ', error);
+                console.log('Error Fetch Data: ', error);
             } else {
                 setTestimonies(data);
             }
@@ -47,7 +47,7 @@ export default function Testimonies() {
                 <div className="flex md:flex-row flex-col justify-center space-x-2 pt-15">
                     {testimonies.map((data : ITestimonies) => (
                         <CardTestimonies key={data.id} testimonyText={data.client_testimonies} name={data.client_name} position={data.client_position}/>                        
-                    ))};
+                    ))}
                 </div>
                 {/* Card Testimonies */}
             </div>
