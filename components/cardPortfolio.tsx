@@ -1,58 +1,78 @@
 import Image from "next/image";
-import { ReactNode } from "react";
 import Button from "@/components/button";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FiGithub } from "react-icons/fi";
 
 interface CardPortfolioProps {
     portfolioTitle: string;
+    portfolioImage? : string;
     portfolioDescription: string;
-    portfolioTech?: ReactNode;
     portfolioLiveDemoLink?: string;
     portfolioGithubLink?: string;
 }
 
 export default function CardPortfolio({
     portfolioTitle,
+    portfolioImage = "/images/bg-main-color.png",
     portfolioDescription,
-    portfolioTech = "",
     portfolioLiveDemoLink = "",
     portfolioGithubLink = "",
 }: CardPortfolioProps) {
-    return (
-        <div className="border border-(--main-color) rounded-lg w-[400px]">
-            <div>
+    const hasLiveDemo = portfolioLiveDemoLink && portfolioLiveDemoLink.trim() !== "";
+    const hasGithub = portfolioGithubLink && portfolioGithubLink.trim() !== "";
+
+     return (
+        <div className="group w-full max-w-md rounded-2xl overflow-hidden bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#FF4F04]/20 flex flex-col h-full">
+            {/* Image with accent line */}
+            <div className="relative overflow-hidden">
                 <Image 
-                    src="/images/bg-main-color.png"
+                    src={portfolioImage}
                     alt="Projects Photo"
                     width={400}
                     height={200}
-                    className="rounded-lg border border-b-(--main-color)"
+                    className="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                {/* Accent bar */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#FF4F04] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
             </div>
-            {/* Typography */}
-            <div className="px-10 py-10">
-                <p className="text-[24px] font-bold">
+
+            {/* Content - flex-grow */}
+            <div className="p-6 sm:p-8 flex-grow flex flex-col">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-gray-900 group-hover:text-[#FF4F04] transition-colors duration-300">
                     {portfolioTitle}
-                </p>
-                <p className="text-justify">
+                </h3>
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
                     {portfolioDescription}
                 </p>
-                <p className="pt-3">
-                    {portfolioTech}
-                </p>
+
+                {/* Spacer */}
+                <div className="flex-grow"></div>
+
+                {/* Buttons - Always at bottom */}
+                <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                    {hasLiveDemo && (
+                        <a href={portfolioLiveDemoLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                            <Button 
+                                label="Live Demo" 
+                                labelClassName="text-sm sm:text-base" 
+                                icon={<RxOpenInNewWindow />}
+                                className="w-full"
+                            />
+                        </a>
+                    )}
+                    {hasGithub && (
+                        <a href={portfolioGithubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                            <Button 
+                                label="Github" 
+                                variant="secondary" 
+                                labelClassName="text-sm sm:text-base" 
+                                icon={<FiGithub />}
+                                className="w-full"
+                            />
+                        </a>
+                    )}
+                </div>
             </div>
-            {/* Typography End */}
-            {/* Buttons*/}
-            <div className="flex md:flex-row flex-col px-10 pb-10 space-x-3 space-y-2">
-                <a href={portfolioLiveDemoLink} target="_blank">
-                    <Button label="Live Demo" labelClassName="text-[14px]" icon={<RxOpenInNewWindow />} />
-                </a>
-                <a href={portfolioGithubLink} target="_blank">
-                    <Button label="Github" variant="secondary" labelClassName="text-[14px]" icon={<FiGithub />} />
-                </a>
-            </div>
-            {/* Buttons End */}
         </div>
-    )
+    );
 }

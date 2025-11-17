@@ -29,7 +29,7 @@ export default function Cta(
                 </div>
                 {/* Typography End */}
                 {/* Button */}
-                <div className="flex flex-col md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
+                <div className="flex flex-wrap md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
                     <Link href="/contact">
                         <Button label="Kickstart Now" icon={<IoCall />} variant="primary" />
                     </Link>

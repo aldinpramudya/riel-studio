@@ -34,7 +34,6 @@ export default function Testimonies() {
         fetchTestimonies();
     }, [supabase]);
 
-
     return (
         <>
             {/* Testimonies */}
@@ -42,7 +41,7 @@ export default function Testimonies() {
                 {/* Typography */}
                 <div className="relative flex flex-col items-start justify-center overflow-hidden">
                     {/* Decorative Quote Icon */}
-                    <div className="absolute inset-0 flex ">
+                    <div className="absolute inset-0 top-25 flex">
                         <ImQuotesRight
                             color="#FF4F04"
                             size={260}
@@ -65,10 +64,12 @@ export default function Testimonies() {
                 </div>
                 {/* TypoGraphy End */}
                 {/* Cards */}
-                <div className="md:flex md:space-x-2 md:pt-0 pt-5 space-y-3">
-                    {testimonies.map((data : ITestimonies) => (
-                        <CardTestimonies key={data.id} testimonyText={data.client_testimonies} name={data.client_name} position={data.client_position}/>                        
-                    ))};
+                <div className="md:flex md:space-x-2 md:pt-0 pt-5 space-y-2">
+                    {testimonies.slice(0, 2).map((data: ITestimonies) => (
+                        <div key={data.id}>
+                            <CardTestimonies testimonyText={data.client_testimonies} name={data.client_name} position={data.client_position} />
+                        </div>
+                    ))}
                 </div>
                 {/* Cards End*/}
             </div>
