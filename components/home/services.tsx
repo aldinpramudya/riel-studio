@@ -1,9 +1,21 @@
+"use client" 
+
 import Card from "@/components/card";
 
 import { MdOutlineColorLens } from "react-icons/md";
+
 import { IoCodeSlash } from "react-icons/io5";
 
+// GSAP
+import gsap from "gsap";
+// GSAP Hooks
+import { useGSAP } from "@gsap/react";
+
 export default function Services() {
+    useGSAP(() => {
+        
+    })
+
     return (
         <>
             {/* Services Content */}
