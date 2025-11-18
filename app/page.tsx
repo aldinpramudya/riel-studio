@@ -6,6 +6,8 @@ import Testimonies from "@/components/home/testimonies";
 import Cta from "@/components/cta";
 
 export default function Home() {
+  
+
   return (
     <>
       {/* Container Padding X-axis and little bit Padding Y-axis*/}

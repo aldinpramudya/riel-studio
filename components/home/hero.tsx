@@ -1,3 +1,5 @@
+"use client"
+
 import Button from "@/components/button";
 
 import { FaArrowRight } from "react-icons/fa6";
@@ -5,18 +7,42 @@ import { LuSparkles } from "react-icons/lu";
 
 import Link from "next/link";
 
+// GSAP
+import gsap from "gsap";
+// GSAP Hooks
+import { useGSAP } from "@gsap/react";
+
 export default function Hero() {
+    useGSAP(() => {
+        gsap.from('#hero-title', {
+            opacity : 0,
+            y : -50,
+            duration : 1,
+        });
+
+        gsap.from('#hero-subtitle', {
+            opacity : 0,
+            y : -50,
+            duration : 2,
+        });
+
+        gsap.from("#hero-buttons", {
+            opacity : 0,
+            duration : 2,
+        })
+    })
+
     return (
         <>
             {/* Hero Centered Content Container */}
             <div id="hero">
                 {/* Tagline */}
-                <h1 className="text-center capitalize font-bold md:text-[96px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
+                <h1 id="hero-title" className="text-center capitalize font-bold md:text-[96px] text-[35px] tracking-tight bg-linear-to-r from-[#FF4F04] via-[#FFA743] to-[#F68554] bg-clip-text text-transparent">
                     kickstart your ideas <br /> empower your journey
                 </h1>
                 {/* Tagline End */}
                 {/* Description */}
-                <div className="md:text-[30px] text-lg">
+                <div id="hero-subtitle" className="md:text-[30px] text-lg">
                     <p className="font-semibold text-center">
                         Every great idea needs a first step.
                     </p>
@@ -26,7 +52,7 @@ export default function Hero() {
                 </div>
                 {/* Description End*/}
                 {/* Buttons */}
-                <div className="flex flex-wrap md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
+                <div id="hero-buttons" className="flex flex-wrap md:flex-row justify-center md:space-x-5 space-y-5 md:space-y-0 pt-10">
                     <Link href="/contact">
                         <Button label="Start Now" icon={<LuSparkles />} variant="primary" labelClassName="text-[15px] md:text-[20px]" />
                     </Link>
